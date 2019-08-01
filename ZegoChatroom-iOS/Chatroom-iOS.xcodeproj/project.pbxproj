@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3307ECF222AE30700025C874 /* ZegoKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3307ECF122AE30700025C874 /* ZegoKeyCenter.m */; };
+		33519715222D0C5E0082C224 /* ZegoRoomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33519714222D0C5E0082C224 /* ZegoRoomListViewController.m */; };
+		33519718222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.m in Sources */ = {isa = PBXBuildFile; fileRef = 33519717222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.m */; };
+		33519722222D16CB0082C224 /* UIViewController+TopPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351971E222D16CA0082C224 /* UIViewController+TopPresent.m */; };
+		33519723222D16CB0082C224 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3351971F222D16CA0082C224 /* UIView+Toast.m */; };
+		33519726222D18C00082C224 /* ZegoChatroomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33519725222D18C00082C224 /* ZegoChatroomViewController.m */; };
+		33556940221FFE9C00BDFC3F /* ZGUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3355693F221FFE9C00BDFC3F /* ZGUserHelper.m */; };
+		3363FECD22F284D500461460 /* ZegoChatroom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3363FECA22F284C800461460 /* ZegoChatroom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3363FED122F2894500461460 /* ZegoChatroom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3363FED022F2894500461460 /* ZegoChatroom.framework */; };
+		3364CC572238AFED0070AC0D /* ZegoHudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC562238AFED0070AC0D /* ZegoHudManager.m */; };
+		3364CC5A2238B0740070AC0D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC592238B0730070AC0D /* MBProgressHUD.m */; };
+		3364CC5D22393CA90070AC0D /* zhuoniqiu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3364CC5C22393CA90070AC0D /* zhuoniqiu.mp3 */; };
+		3364CC61223958580070AC0D /* ZegoMsgInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC5E223958570070AC0D /* ZegoMsgInputView.m */; };
+		3364CC62223958580070AC0D /* ZegoMsgInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3364CC60223958580070AC0D /* ZegoMsgInputView.xib */; };
+		3364CC652239598C0070AC0D /* UIColor+ZegoExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC632239598C0070AC0D /* UIColor+ZegoExtension.m */; };
+		3364CC6822395A070070AC0D /* UIView+ZegoExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC6722395A070070AC0D /* UIView+ZegoExtension.m */; };
+		3364CC6D223960760070AC0D /* ZegoSoundEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC69223960760070AC0D /* ZegoSoundEffectViewController.m */; };
+		3364CC6E223960760070AC0D /* ZegoPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC6B223960760070AC0D /* ZegoPopupViewController.m */; };
+		3364CC89223960AD0070AC0D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC71223960AC0070AC0D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		3364CC8A223960AD0070AC0D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC7A223960AC0070AC0D /* ViewController+MASAdditions.m */; };
+		3364CC8B223960AD0070AC0D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC7E223960AD0070AC0D /* MASCompositeConstraint.m */; };
+		3364CC8C223960AD0070AC0D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC7F223960AD0070AC0D /* MASConstraintMaker.m */; };
+		3364CC8D223960AD0070AC0D /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC80223960AD0070AC0D /* MASLayoutConstraint.m */; };
+		3364CC8E223960AD0070AC0D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC81223960AD0070AC0D /* NSArray+MASAdditions.m */; };
+		3364CC8F223960AD0070AC0D /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC82223960AD0070AC0D /* View+MASAdditions.m */; };
+		3364CC90223960AD0070AC0D /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC85223960AD0070AC0D /* MASConstraint.m */; };
+		3364CC91223960AD0070AC0D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC87223960AD0070AC0D /* MASViewConstraint.m */; };
+		3364CC92223960AD0070AC0D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC88223960AD0070AC0D /* MASViewAttribute.m */; };
+		3364CC972239616A0070AC0D /* ZegoSoundEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC952239616A0070AC0D /* ZegoSoundEffectView.m */; };
+		3364CC982239616A0070AC0D /* ZegoSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC962239616A0070AC0D /* ZegoSegmentView.m */; };
+		3364CC9B223961CD0070AC0D /* ZegoSoundEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3364CC9A223961CD0070AC0D /* ZegoSoundEffectManager.m */; };
+		3371281E22B508B200245A82 /* ZegoLiveRoom.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3371281522B508A400245A82 /* ZegoLiveRoom.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3371282722B5094900245A82 /* ZegoLiveRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3371281522B508A400245A82 /* ZegoLiveRoom.framework */; };
+		3375B2BD222D241B00989BDA /* ZegoCreateRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3375B2BC222D241B00989BDA /* ZegoCreateRoomViewController.m */; };
+		33E3055F225D941D0010B426 /* ZegoChatroomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E3055E225D941D0010B426 /* ZegoChatroomInfo.m */; };
+		33F8C3F12241DAFE00964001 /* ZegoMusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F8C3F02241DAFE00964001 /* ZegoMusicPlayViewController.m */; };
+		33F8C3F52241DB9A00964001 /* shishangzhiyoumamahao.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8C3F32241DB9900964001 /* shishangzhiyoumamahao.mp3 */; };
+		33F8C3F62241DB9A00964001 /* haikuotiankong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8C3F42241DB9900964001 /* haikuotiankong.mp3 */; };
+		33F8C3F82242164600964001 /* laugth.wav in Resources */ = {isa = PBXBuildFile; fileRef = 33F8C3F72242164500964001 /* laugth.wav */; };
+		33FB6F662212995B006CF87D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FB6F652212995B006CF87D /* AppDelegate.m */; };
+		33FB6F6C2212995B006CF87D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FB6F6A2212995B006CF87D /* Main.storyboard */; };
+		33FB6F6E2212995D006CF87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FB6F6D2212995D006CF87D /* Assets.xcassets */; };
+		33FB6F712212995D006CF87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FB6F6F2212995D006CF87D /* LaunchScreen.storyboard */; };
+		33FB6F742212995D006CF87D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FB6F732212995D006CF87D /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33FB6FAC22156E49006CF87D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3363FECD22F284D500461460 /* ZegoChatroom.framework in Embed Frameworks */,
+				3371281E22B508B200245A82 /* ZegoLiveRoom.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3307ECF022AE30700025C874 /* ZegoKeyCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoKeyCenter.h; sourceTree = "<group>"; };
+		3307ECF122AE30700025C874 /* ZegoKeyCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoKeyCenter.m; sourceTree = "<group>"; };
+		33519713222D0C5E0082C224 /* ZegoRoomListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoRoomListViewController.h; sourceTree = "<group>"; };
+		33519714222D0C5E0082C224 /* ZegoRoomListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoRoomListViewController.m; sourceTree = "<group>"; };
+		33519716222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZegoChatroomInfo+FetchRoomList.h"; sourceTree = "<group>"; };
+		33519717222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZegoChatroomInfo+FetchRoomList.m"; sourceTree = "<group>"; };
+		33519719222D130D0082C224 /* ZGAppDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAppDefine.h; sourceTree = "<group>"; };
+		3351971E222D16CA0082C224 /* UIViewController+TopPresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TopPresent.m"; sourceTree = "<group>"; };
+		3351971F222D16CA0082C224 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		33519720222D16CB0082C224 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		33519721222D16CB0082C224 /* UIViewController+TopPresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TopPresent.h"; sourceTree = "<group>"; };
+		33519724222D18C00082C224 /* ZegoChatroomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoChatroomViewController.h; sourceTree = "<group>"; };
+		33519725222D18C00082C224 /* ZegoChatroomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoChatroomViewController.m; sourceTree = "<group>"; };
+		3355693E221FFE9C00BDFC3F /* ZGUserHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGUserHelper.h; sourceTree = "<group>"; };
+		3355693F221FFE9C00BDFC3F /* ZGUserHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGUserHelper.m; sourceTree = "<group>"; };
+		3363FECA22F284C800461460 /* ZegoChatroom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZegoChatroom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3363FED022F2894500461460 /* ZegoChatroom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZegoChatroom.framework; path = "../ZegoChatroom/DerivedData/ZegoChatroom/Build/Products/Release-iphoneos/ZegoChatroom.framework"; sourceTree = "<group>"; };
+		3364CC552238AFED0070AC0D /* ZegoHudManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoHudManager.h; sourceTree = "<group>"; };
+		3364CC562238AFED0070AC0D /* ZegoHudManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoHudManager.m; sourceTree = "<group>"; };
+		3364CC582238B0730070AC0D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3364CC592238B0730070AC0D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3364CC5C22393CA90070AC0D /* zhuoniqiu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zhuoniqiu.mp3; sourceTree = "<group>"; };
+		3364CC5E223958570070AC0D /* ZegoMsgInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoMsgInputView.m; sourceTree = "<group>"; };
+		3364CC5F223958570070AC0D /* ZegoMsgInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoMsgInputView.h; sourceTree = "<group>"; };
+		3364CC60223958580070AC0D /* ZegoMsgInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZegoMsgInputView.xib; sourceTree = "<group>"; };
+		3364CC632239598C0070AC0D /* UIColor+ZegoExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZegoExtension.m"; sourceTree = "<group>"; };
+		3364CC642239598C0070AC0D /* UIColor+ZegoExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZegoExtension.h"; sourceTree = "<group>"; };
+		3364CC6622395A070070AC0D /* UIView+ZegoExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZegoExtension.h"; sourceTree = "<group>"; };
+		3364CC6722395A070070AC0D /* UIView+ZegoExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZegoExtension.m"; sourceTree = "<group>"; };
+		3364CC69223960760070AC0D /* ZegoSoundEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoSoundEffectViewController.m; sourceTree = "<group>"; };
+		3364CC6A223960760070AC0D /* ZegoSoundEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoSoundEffectViewController.h; sourceTree = "<group>"; };
+		3364CC6B223960760070AC0D /* ZegoPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoPopupViewController.m; sourceTree = "<group>"; };
+		3364CC6C223960760070AC0D /* ZegoPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoPopupViewController.h; sourceTree = "<group>"; };
+		3364CC70223960AC0070AC0D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		3364CC71223960AC0070AC0D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		3364CC72223960AC0070AC0D /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3364CC73223960AC0070AC0D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		3364CC74223960AC0070AC0D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3364CC75223960AC0070AC0D /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		3364CC76223960AC0070AC0D /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		3364CC77223960AC0070AC0D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		3364CC78223960AC0070AC0D /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		3364CC79223960AC0070AC0D /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		3364CC7A223960AC0070AC0D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		3364CC7B223960AC0070AC0D /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		3364CC7C223960AD0070AC0D /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		3364CC7D223960AD0070AC0D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3364CC7E223960AD0070AC0D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		3364CC7F223960AD0070AC0D /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		3364CC80223960AD0070AC0D /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		3364CC81223960AD0070AC0D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		3364CC82223960AD0070AC0D /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		3364CC83223960AD0070AC0D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3364CC84223960AD0070AC0D /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		3364CC85223960AD0070AC0D /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		3364CC86223960AD0070AC0D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		3364CC87223960AD0070AC0D /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		3364CC88223960AD0070AC0D /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		3364CC93223961690070AC0D /* ZegoSoundEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoSoundEffectView.h; sourceTree = "<group>"; };
+		3364CC942239616A0070AC0D /* ZegoSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoSegmentView.h; sourceTree = "<group>"; };
+		3364CC952239616A0070AC0D /* ZegoSoundEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoSoundEffectView.m; sourceTree = "<group>"; };
+		3364CC962239616A0070AC0D /* ZegoSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoSegmentView.m; sourceTree = "<group>"; };
+		3364CC99223961CD0070AC0D /* ZegoSoundEffectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoSoundEffectManager.h; sourceTree = "<group>"; };
+		3364CC9A223961CD0070AC0D /* ZegoSoundEffectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoSoundEffectManager.m; sourceTree = "<group>"; };
+		3371281522B508A400245A82 /* ZegoLiveRoom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZegoLiveRoom.framework; path = ../ZegoLiveRoom/ZegoLiveRoom.framework; sourceTree = "<group>"; };
+		3375B2BB222D241B00989BDA /* ZegoCreateRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoCreateRoomViewController.h; sourceTree = "<group>"; };
+		3375B2BC222D241B00989BDA /* ZegoCreateRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoCreateRoomViewController.m; sourceTree = "<group>"; };
+		33E3055D225D941D0010B426 /* ZegoChatroomInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoChatroomInfo.h; sourceTree = "<group>"; };
+		33E3055E225D941D0010B426 /* ZegoChatroomInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoChatroomInfo.m; sourceTree = "<group>"; };
+		33F8C3EF2241DAFE00964001 /* ZegoMusicPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoMusicPlayViewController.h; sourceTree = "<group>"; };
+		33F8C3F02241DAFE00964001 /* ZegoMusicPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoMusicPlayViewController.m; sourceTree = "<group>"; };
+		33F8C3F32241DB9900964001 /* shishangzhiyoumamahao.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shishangzhiyoumamahao.mp3; sourceTree = "<group>"; };
+		33F8C3F42241DB9900964001 /* haikuotiankong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = haikuotiankong.mp3; sourceTree = "<group>"; };
+		33F8C3F72242164500964001 /* laugth.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laugth.wav; sourceTree = "<group>"; };
+		33FB6F612212995B006CF87D /* Chatroom-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chatroom-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FB6F642212995B006CF87D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33FB6F652212995B006CF87D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33FB6F6B2212995B006CF87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33FB6F6D2212995D006CF87D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33FB6F702212995D006CF87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33FB6F722212995D006CF87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FB6F732212995D006CF87D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33FB6F5E2212995B006CF87D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3363FED122F2894500461460 /* ZegoChatroom.framework in Frameworks */,
+				3371282722B5094900245A82 /* ZegoLiveRoom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3313B38022B4F9A600028E08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3363FECA22F284C800461460 /* ZegoChatroom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33519710222D0C110082C224 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				33519711222D0C1A0082C224 /* ZegoRoomList */,
+				33519712222D0C3B0082C224 /* ZegoChatroom */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		33519711222D0C1A0082C224 /* ZegoRoomList */ = {
+			isa = PBXGroup;
+			children = (
+				33519713222D0C5E0082C224 /* ZegoRoomListViewController.h */,
+				33519714222D0C5E0082C224 /* ZegoRoomListViewController.m */,
+				3375B2BB222D241B00989BDA /* ZegoCreateRoomViewController.h */,
+				3375B2BC222D241B00989BDA /* ZegoCreateRoomViewController.m */,
+			);
+			path = ZegoRoomList;
+			sourceTree = "<group>";
+		};
+		33519712222D0C3B0082C224 /* ZegoChatroom */ = {
+			isa = PBXGroup;
+			children = (
+				33519724222D18C00082C224 /* ZegoChatroomViewController.h */,
+				33519725222D18C00082C224 /* ZegoChatroomViewController.m */,
+				3364CC93223961690070AC0D /* ZegoSoundEffectView.h */,
+				3364CC952239616A0070AC0D /* ZegoSoundEffectView.m */,
+				3364CC942239616A0070AC0D /* ZegoSegmentView.h */,
+				3364CC962239616A0070AC0D /* ZegoSegmentView.m */,
+				3364CC5F223958570070AC0D /* ZegoMsgInputView.h */,
+				3364CC5E223958570070AC0D /* ZegoMsgInputView.m */,
+				3364CC60223958580070AC0D /* ZegoMsgInputView.xib */,
+				3364CC6C223960760070AC0D /* ZegoPopupViewController.h */,
+				3364CC6B223960760070AC0D /* ZegoPopupViewController.m */,
+				3364CC6A223960760070AC0D /* ZegoSoundEffectViewController.h */,
+				3364CC69223960760070AC0D /* ZegoSoundEffectViewController.m */,
+				33F8C3EF2241DAFE00964001 /* ZegoMusicPlayViewController.h */,
+				33F8C3F02241DAFE00964001 /* ZegoMusicPlayViewController.m */,
+			);
+			path = ZegoChatroom;
+			sourceTree = "<group>";
+		};
+		3355693D221FFE5400BDFC3F /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				33519719222D130D0082C224 /* ZGAppDefine.h */,
+				3364CC642239598C0070AC0D /* UIColor+ZegoExtension.h */,
+				3364CC632239598C0070AC0D /* UIColor+ZegoExtension.m */,
+				3364CC6622395A070070AC0D /* UIView+ZegoExtension.h */,
+				3364CC6722395A070070AC0D /* UIView+ZegoExtension.m */,
+				3355693E221FFE9C00BDFC3F /* ZGUserHelper.h */,
+				3355693F221FFE9C00BDFC3F /* ZGUserHelper.m */,
+				33519716222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.h */,
+				33519717222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.m */,
+				33519720222D16CB0082C224 /* UIView+Toast.h */,
+				3351971F222D16CA0082C224 /* UIView+Toast.m */,
+				33519721222D16CB0082C224 /* UIViewController+TopPresent.h */,
+				3351971E222D16CA0082C224 /* UIViewController+TopPresent.m */,
+				3364CC99223961CD0070AC0D /* ZegoSoundEffectManager.h */,
+				3364CC9A223961CD0070AC0D /* ZegoSoundEffectManager.m */,
+				33E3055D225D941D0010B426 /* ZegoChatroomInfo.h */,
+				33E3055E225D941D0010B426 /* ZegoChatroomInfo.m */,
+				3307ECF022AE30700025C874 /* ZegoKeyCenter.h */,
+				3307ECF122AE30700025C874 /* ZegoKeyCenter.m */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		3364CC512238AF9E0070AC0D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				3364CC6F223960AC0070AC0D /* Masonry */,
+				3364CC582238B0730070AC0D /* MBProgressHUD.h */,
+				3364CC592238B0730070AC0D /* MBProgressHUD.m */,
+				3364CC552238AFED0070AC0D /* ZegoHudManager.h */,
+				3364CC562238AFED0070AC0D /* ZegoHudManager.m */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		3364CC6F223960AC0070AC0D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3364CC70223960AC0070AC0D /* MASCompositeConstraint.h */,
+				3364CC71223960AC0070AC0D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				3364CC72223960AC0070AC0D /* MASConstraint+Private.h */,
+				3364CC73223960AC0070AC0D /* MASLayoutConstraint.h */,
+				3364CC74223960AC0070AC0D /* NSArray+MASShorthandAdditions.h */,
+				3364CC75223960AC0070AC0D /* MASConstraintMaker.h */,
+				3364CC76223960AC0070AC0D /* View+MASAdditions.h */,
+				3364CC77223960AC0070AC0D /* NSArray+MASAdditions.h */,
+				3364CC78223960AC0070AC0D /* MASUtilities.h */,
+				3364CC79223960AC0070AC0D /* MASViewAttribute.h */,
+				3364CC7A223960AC0070AC0D /* ViewController+MASAdditions.m */,
+				3364CC7B223960AC0070AC0D /* MASViewConstraint.h */,
+				3364CC7C223960AD0070AC0D /* MASConstraint.h */,
+				3364CC7D223960AD0070AC0D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				3364CC7E223960AD0070AC0D /* MASCompositeConstraint.m */,
+				3364CC7F223960AD0070AC0D /* MASConstraintMaker.m */,
+				3364CC80223960AD0070AC0D /* MASLayoutConstraint.m */,
+				3364CC81223960AD0070AC0D /* NSArray+MASAdditions.m */,
+				3364CC82223960AD0070AC0D /* View+MASAdditions.m */,
+				3364CC83223960AD0070AC0D /* View+MASShorthandAdditions.h */,
+				3364CC84223960AD0070AC0D /* Masonry.h */,
+				3364CC85223960AD0070AC0D /* MASConstraint.m */,
+				3364CC86223960AD0070AC0D /* ViewController+MASAdditions.h */,
+				3364CC87223960AD0070AC0D /* MASViewConstraint.m */,
+				3364CC88223960AD0070AC0D /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		3371281422B5089500245A82 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				3363FED022F2894500461460 /* ZegoChatroom.framework */,
+				3371281522B508A400245A82 /* ZegoLiveRoom.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		33FB6F582212995B006CF87D = {
+			isa = PBXGroup;
+			children = (
+				3371281422B5089500245A82 /* libs */,
+				33FB6F632212995B006CF87D /* Chatroom-iOS */,
+				33FB6F622212995B006CF87D /* Products */,
+				3313B38022B4F9A600028E08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33FB6F622212995B006CF87D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33FB6F612212995B006CF87D /* Chatroom-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33FB6F632212995B006CF87D /* Chatroom-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3364CC512238AF9E0070AC0D /* libs */,
+				33519710222D0C110082C224 /* UI */,
+				3355693D221FFE5400BDFC3F /* AppSupport */,
+				33FB6F642212995B006CF87D /* AppDelegate.h */,
+				33FB6F652212995B006CF87D /* AppDelegate.m */,
+				33FB6F6A2212995B006CF87D /* Main.storyboard */,
+				33F8C3F72242164500964001 /* laugth.wav */,
+				3364CC5C22393CA90070AC0D /* zhuoniqiu.mp3 */,
+				33F8C3F42241DB9900964001 /* haikuotiankong.mp3 */,
+				33F8C3F32241DB9900964001 /* shishangzhiyoumamahao.mp3 */,
+				33FB6F6D2212995D006CF87D /* Assets.xcassets */,
+				33FB6F6F2212995D006CF87D /* LaunchScreen.storyboard */,
+				33FB6F722212995D006CF87D /* Info.plist */,
+				33FB6F732212995D006CF87D /* main.m */,
+			);
+			path = "Chatroom-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33FB6F602212995B006CF87D /* Chatroom-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33FB6F772212995D006CF87D /* Build configuration list for PBXNativeTarget "Chatroom-iOS" */;
+			buildPhases = (
+				33FB6F5D2212995B006CF87D /* Sources */,
+				33FB6F5E2212995B006CF87D /* Frameworks */,
+				33FB6F5F2212995B006CF87D /* Resources */,
+				33FB6FAC22156E49006CF87D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chatroom-iOS";
+			productName = "Chatroom-iOS";
+			productReference = 33FB6F612212995B006CF87D /* Chatroom-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33FB6F592212995B006CF87D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = zego;
+				TargetAttributes = {
+					33FB6F602212995B006CF87D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 33FB6F5C2212995B006CF87D /* Build configuration list for PBXProject "Chatroom-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33FB6F582212995B006CF87D;
+			productRefGroup = 33FB6F622212995B006CF87D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33FB6F602212995B006CF87D /* Chatroom-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33FB6F5F2212995B006CF87D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FB6F712212995D006CF87D /* LaunchScreen.storyboard in Resources */,
+				33FB6F6E2212995D006CF87D /* Assets.xcassets in Resources */,
+				3364CC62223958580070AC0D /* ZegoMsgInputView.xib in Resources */,
+				33F8C3F82242164600964001 /* laugth.wav in Resources */,
+				33F8C3F62241DB9A00964001 /* haikuotiankong.mp3 in Resources */,
+				33FB6F6C2212995B006CF87D /* Main.storyboard in Resources */,
+				33F8C3F52241DB9A00964001 /* shishangzhiyoumamahao.mp3 in Resources */,
+				3364CC5D22393CA90070AC0D /* zhuoniqiu.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33FB6F5D2212995B006CF87D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33519718222D12C80082C224 /* ZegoChatroomInfo+FetchRoomList.m in Sources */,
+				3364CC652239598C0070AC0D /* UIColor+ZegoExtension.m in Sources */,
+				33FB6F742212995D006CF87D /* main.m in Sources */,
+				3364CC982239616A0070AC0D /* ZegoSegmentView.m in Sources */,
+				33556940221FFE9C00BDFC3F /* ZGUserHelper.m in Sources */,
+				3364CC6D223960760070AC0D /* ZegoSoundEffectViewController.m in Sources */,
+				3364CC6E223960760070AC0D /* ZegoPopupViewController.m in Sources */,
+				3364CC972239616A0070AC0D /* ZegoSoundEffectView.m in Sources */,
+				3364CC8C223960AD0070AC0D /* MASConstraintMaker.m in Sources */,
+				3307ECF222AE30700025C874 /* ZegoKeyCenter.m in Sources */,
+				33519723222D16CB0082C224 /* UIView+Toast.m in Sources */,
+				33519722222D16CB0082C224 /* UIViewController+TopPresent.m in Sources */,
+				33E3055F225D941D0010B426 /* ZegoChatroomInfo.m in Sources */,
+				3375B2BD222D241B00989BDA /* ZegoCreateRoomViewController.m in Sources */,
+				3364CC91223960AD0070AC0D /* MASViewConstraint.m in Sources */,
+				3364CC6822395A070070AC0D /* UIView+ZegoExtension.m in Sources */,
+				3364CC8A223960AD0070AC0D /* ViewController+MASAdditions.m in Sources */,
+				3364CC61223958580070AC0D /* ZegoMsgInputView.m in Sources */,
+				3364CC8D223960AD0070AC0D /* MASLayoutConstraint.m in Sources */,
+				3364CC572238AFED0070AC0D /* ZegoHudManager.m in Sources */,
+				3364CC5A2238B0740070AC0D /* MBProgressHUD.m in Sources */,
+				3364CC9B223961CD0070AC0D /* ZegoSoundEffectManager.m in Sources */,
+				3364CC92223960AD0070AC0D /* MASViewAttribute.m in Sources */,
+				33519726222D18C00082C224 /* ZegoChatroomViewController.m in Sources */,
+				3364CC8E223960AD0070AC0D /* NSArray+MASAdditions.m in Sources */,
+				3364CC89223960AD0070AC0D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				3364CC8F223960AD0070AC0D /* View+MASAdditions.m in Sources */,
+				33F8C3F12241DAFE00964001 /* ZegoMusicPlayViewController.m in Sources */,
+				3364CC8B223960AD0070AC0D /* MASCompositeConstraint.m in Sources */,
+				33FB6F662212995B006CF87D /* AppDelegate.m in Sources */,
+				3364CC90223960AD0070AC0D /* MASConstraint.m in Sources */,
+				33519715222D0C5E0082C224 /* ZegoRoomListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33FB6F6A2212995B006CF87D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FB6F6B2212995B006CF87D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33FB6F6F2212995D006CF87D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FB6F702212995D006CF87D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33FB6F752212995D006CF87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33FB6F762212995D006CF87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33FB6F782212995D006CF87D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../ZegoLiveRoom",
+					"$(PROJECT_DIR)/../ZegoChatroom",
+				);
+				INFOPLIST_FILE = "Chatroom-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zego.Chatroom-iOS.";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+			};
+			name = Debug;
+		};
+		33FB6F792212995D006CF87D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../ZegoLiveRoom",
+					"$(PROJECT_DIR)/../ZegoChatroom",
+				);
+				INFOPLIST_FILE = "Chatroom-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zego.Chatroom-iOS.";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "";
+				WARNING_LDFLAGS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33FB6F5C2212995B006CF87D /* Build configuration list for PBXProject "Chatroom-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FB6F752212995D006CF87D /* Debug */,
+				33FB6F762212995D006CF87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33FB6F772212995D006CF87D /* Build configuration list for PBXNativeTarget "Chatroom-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FB6F782212995D006CF87D /* Debug */,
+				33FB6F792212995D006CF87D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33FB6F592212995B006CF87D /* Project object */;
+}

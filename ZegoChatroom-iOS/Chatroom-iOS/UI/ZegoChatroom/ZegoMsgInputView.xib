@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZegoMsgInputView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeK-b4-zF2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Okt-gD-adZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSX-nz-ufW">
+                    <rect key="frame" x="319" y="1" width="50" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="RLx-gq-Lfb"/>
+                    </constraints>
+                    <state key="normal" title="发送"/>
+                    <connections>
+                        <action selector="onClickSend:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Uj-Ho-UEk"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a09-DU-KIp">
+                    <rect key="frame" x="16" y="6" width="303" height="32"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6os-Bj-uCx">
+                            <rect key="frame" x="15" y="8" width="273" height="16"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6os-Bj-uCx" secondAttribute="trailing" constant="15" id="XB4-Vm-J71"/>
+                        <constraint firstAttribute="bottom" secondItem="6os-Bj-uCx" secondAttribute="bottom" constant="8" id="Zjn-CN-MNZ"/>
+                        <constraint firstItem="6os-Bj-uCx" firstAttribute="top" secondItem="a09-DU-KIp" secondAttribute="top" constant="8" id="qwk-Re-pRq"/>
+                        <constraint firstAttribute="height" constant="32" id="yWL-Gi-cuq"/>
+                        <constraint firstItem="6os-Bj-uCx" firstAttribute="leading" secondItem="a09-DU-KIp" secondAttribute="leading" constant="15" id="yfy-QX-Hqn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a09-DU-KIp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3gC-OT-zKI"/>
+                <constraint firstAttribute="trailing" secondItem="SSX-nz-ufW" secondAttribute="trailing" constant="6" id="AlV-2u-BSb"/>
+                <constraint firstAttribute="trailing" secondItem="VeK-b4-zF2" secondAttribute="trailing" id="GCw-iA-9zJ"/>
+                <constraint firstItem="a09-DU-KIp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="KyD-TB-8g7"/>
+                <constraint firstItem="SSX-nz-ufW" firstAttribute="top" secondItem="VeK-b4-zF2" secondAttribute="bottom" id="Lhh-ac-3O8"/>
+                <constraint firstItem="VeK-b4-zF2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TdE-UA-HDt"/>
+                <constraint firstItem="SSX-nz-ufW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XDU-uM-kGV"/>
+                <constraint firstItem="VeK-b4-zF2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aBP-dm-o1E"/>
+                <constraint firstItem="SSX-nz-ufW" firstAttribute="leading" secondItem="a09-DU-KIp" secondAttribute="trailing" id="j3q-x3-7Ev"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sendBtn" destination="SSX-nz-ufW" id="4ZL-3m-mcx"/>
+                <outlet property="textField" destination="6os-Bj-uCx" id="b0B-9A-ZNO"/>
+                <outlet property="tfContentView" destination="a09-DU-KIp" id="WeJ-7p-vx7"/>
+            </connections>
+            <point key="canvasLocation" x="-87.200000000000003" y="138.53073463268368"/>
+        </view>
+    </objects>
+</document>
