@@ -153,8 +153,10 @@
         return;
     }
     
+    NSTimeInterval totalTime = ZegoChatroom.shared.musicPlayer.totalDuration;
     NSTimeInterval currentTime = ZegoChatroom.shared.musicPlayer.currentTime;
     if (currentTime >= 0) {
+        self.slider.maximumValue = totalTime;
         self.slider.value = currentTime;
     }
 }
@@ -193,7 +195,6 @@
     
     if (state == kZegoMusicPlayStatePlaying) {
         [self.playBtn setTitle:@"暂停" forState:UIControlStateNormal];
-        self.slider.maximumValue = ZegoChatroom.shared.musicPlayer.totalDuration;
         [self startTimer];
     }
     else {

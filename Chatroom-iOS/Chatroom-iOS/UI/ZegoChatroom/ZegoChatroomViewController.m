@@ -75,6 +75,7 @@
     self.bgBtn.hidden = !isManager;
     
     [ZegoChatroom setUseTestEnv:IS_TEST_ENV];
+    [ZegoChatroom setLogVerbose:YES];
     [ZegoChatroom setAppID:ZegoKeyCenter.appID appSignature:ZegoKeyCenter.appSignKey user:ZGUserHelper.user];
     [ZegoChatroom.shared addDelegate:self];
     [ZegoChatroom.shared addIMDelegate:self];
@@ -82,29 +83,27 @@
     
     [self setupChatroom];
     
+    //用RoomName来传递某些自定义房间配置
+    NSString *configString= nil;
+    
+    //使用自定义麦位，让自己登录后直接上麦
+    NSUInteger count = 9;
+    NSMutableArray<ZegoChatroomSeat*>*seats = [NSMutableArray arrayWithCapacity:count];
+    for (int i = 0; i < count; ++i) {
+        [seats addObject:[ZegoChatroomSeat emptySeat]];
+    }
+    seats[0].status = kZegoChatroomSeatStatusUsed;
+    seats[0].user = self.roomInfo.user;
+    
     if (isManager) {
-        NSUInteger count = 9;
-        NSMutableArray<ZegoChatroomSeat*>*seats = [NSMutableArray arrayWithCapacity:count];
-        for (int i = 0; i < count; ++i) {
-            [seats addObject:[ZegoChatroomSeat emptySeat]];
-        }
-        seats[0].status = kZegoChatroomSeatStatusUsed;
-        seats[0].user = self.roomInfo.user;
-        
         unsigned long bitrate = [[self.config valueForKey:@"bitrate"] unsignedLongValue];
         unsigned long audioChannelCount = [[self.config valueForKey:@"audioChannelCount"] unsignedLongValue];
         unsigned long latencyMode = [[self.config valueForKey:@"latencyMode"] unsignedLongValue];
         
-        NSString *configString = [NSString stringWithFormat:@"%@_%lu_%lu_%lu",self.roomInfo.roomName, bitrate, audioChannelCount, latencyMode];
-        
-        [ZegoChatroom.shared createRoomWithRoomID:self.roomInfo.roomID
-                                                 roomName:configString
-                                             initialSeats:seats
-                                               liveConfig:self.config];
+        configString = [NSString stringWithFormat:@"%@_%lu_%lu_%lu",self.roomInfo.roomName, bitrate, audioChannelCount, latencyMode];
     }
-    else {
-        [ZegoChatroom.shared joinRoom:self.roomInfo.roomID liveConfig:self.config];
-    }
+    
+    [ZegoChatroom.shared joinRoomWithRoomID:self.roomInfo.roomID roomName:configString initialSeats:seats liveConfig:self.config];
     
     [self setupInputBar];
     [self setupNotifications];
@@ -716,6 +715,7 @@
         case kZegoChatroomReconnectStopReasonKickout:return @"kick out";
         case kZegoChatroomReconnectStopReasonTimeout:return @"login time out";
         case kZegoChatroomReconnectStopReasonSyncError:return @"sync error";
+        case kZegoChatroomReconnectStopReasonTokenError:return @"token error";
     }
 }
 
